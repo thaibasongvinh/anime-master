@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Anime.js Examples</title>
+    <style>
+      :root {
+        --bg: #0f172a;
+        --card: rgba(15, 23, 42, 0.8);
+        --text: #e2e8f0;
+        --muted: #94a3b8;
+        --accent: #8b5cf6;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        background: linear-gradient(135deg, #020817, #0f172a 40%, #111827);
+        color: var(--text);
+      }
+      .wrap {
+        width: min(1100px, calc(100vw - 32px));
+        margin: 0 auto;
+        padding: 48px 0 64px;
+      }
+      h1 {
+        margin: 0 0 12px;
+        font-size: clamp(2rem, 5vw, 3rem);
+      }
+      p {
+        color: var(--muted);
+        line-height: 1.7;
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 18px;
+        margin-top: 28px;
+      }
+      .card {
+        display: block;
+        padding: 18px 16px;
+        border: 1px solid rgba(148,163,184,.25);
+        border-radius: 16px;
+        background: var(--card);
+        color: var(--text);
+        text-decoration: none;
+        transition: transform 0.2s ease, border-color 0.2s ease;
+      }
+      .card:hover {
+        transform: translateY(-2px);
+        border-color: rgba(139,92,246,.8);
+      }
+      .tag {
+        display: inline-block;
+        color: #c4b5fd;
+        font-size: 0.72rem;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        margin-bottom: 8px;
+      }
+      .name {
+        font-size: 1.1rem;
+        font-weight: 700;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="wrap">
+      <h1>Anime.js Examples</h1>
+      <p>Danh sách demo từ repo chính. Mỗi mục là một ví dụ minh họa riêng cho animation, SVG, draggable, timeline và layout.</p>
+
+      <div class="grid">
+        <a class="card" href="./additive-creature/index.html"><span class="tag">Scene</span><div class="name">Additive creature</div></a>
+        <a class="card" href="./additive-fireflies/index.html"><span class="tag">Particles</span><div class="name">Additive fireflies</div></a>
+        <a class="card" href="./advanced-grid-staggering/index.html"><span class="tag">Grid</span><div class="name">Advanced stagger</div></a>
+        <a class="card" href="./animatable-follow-cursor/index.html"><span class="tag">Interaction</span><div class="name">Follow cursor</div></a>
+        <a class="card" href="./animejs-v4-logo-animation/index.html"><span class="tag">Brand</span><div class="name">Logo animation</div></a>
+        <a class="card" href="./auto-layout/index.html"><span class="tag">Layout</span><div class="name">Auto layout</div></a>
+        <a class="card" href="./canvas-2d/index.html"><span class="tag">Canvas</span><div class="name">Canvas 2D</div></a>
+        <a class="card" href="./draggable-playground/index.html"><span class="tag">Draggable</span><div class="name">Draggable playground</div></a>
+        <a class="card" href="./layered-css-transforms/index.html"><span class="tag">CSS</span><div class="name">Layered transforms</div></a>
+        <a class="card" href="./onscroll-responsive-scope/index.html"><span class="tag">Scroll</span><div class="name">Onscroll responsive</div></a>
+        <a class="card" href="./stagger/index.html"><span class="tag">Sequence</span><div class="name">Stagger</div></a>
+        <a class="card" href="./svg-graph/index.html"><span class="tag">SVG</span><div class="name">SVG Graph</div></a>
+        <a class="card" href="./svg-line-drawing/index.html"><span class="tag">SVG</span><div class="name">SVG Line drawing</div></a>
+        <a class="card" href="./text/index.html"><span class="tag">Text</span><div class="name">Text effects</div></a>
+        <a class="card" href="./threejs/transforms/index.html"><span class="tag">3D</span><div class="name">Three.js transforms</div></a>
+      </div>
+    </main>
+  </body>
+</html>

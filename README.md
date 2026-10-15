@@ -111,6 +111,16 @@ Help the project become sustainable by sponsoring us on <a target="_blank" href=
 Get featured here by becoming a <a target="_blank" href="https://github.com/sponsors/juliangarnier">GitHub Sponsor</a>.
 
 
+## GitHub Pages demo
+
+This repository is configured to publish a static demo site on GitHub Pages.
+
+- User site: https://thaibasongvinh.github.io/
+- Project site: https://thaibasongvinh.github.io/anime-master/
+- Demo gallery: https://thaibasongvinh.github.io/anime-master/examples/
+
+To enable Pages in GitHub, open the repository settings, then Settings → Pages → Source: GitHub Actions.
+
 ## Usage
 
 Anime.js V4 works by importing ES modules like so:
